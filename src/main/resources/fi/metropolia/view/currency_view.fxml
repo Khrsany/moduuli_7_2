@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="fi.metropolia.controller.CurrencyController"
+            prefHeight="200" prefWidth="400">
+    <children>
+        <Label layoutX="30" layoutY="30" text="Amount:"/>
+        <TextField fx:id="amountField" layoutX="100" layoutY="25" prefWidth="150"/>
+
+        <Label layoutX="30" layoutY="70" text="From:"/>
+        <ComboBox fx:id="fromCurrency" layoutX="100" layoutY="65" prefWidth="150"/>
+
+        <Label layoutX="30" layoutY="110" text="To:"/>
+        <ComboBox fx:id="toCurrency" layoutX="100" layoutY="105" prefWidth="150"/>
+
+        <Button text="Convert" layoutX="270" layoutY="65" onAction="#convert"/>
+
+        <TextField fx:id="resultField" layoutX="100" layoutY="145" prefWidth="150" editable="false"/>
+    </children>
+</AnchorPane>
